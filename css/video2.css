@@ -1,0 +1,802 @@
+
+
+html{
+  font-family: 'Noto Sans TC', sans-serif;
+  scroll-behavior: smooth;
+  cursor: none;
+}
+
+
+.cursor{
+  position:fixed;
+  z-index: 9999999;
+  width: 25px;
+  height: 25px;
+  border-radius:50% ;
+  background-color: #FFFFFF;
+  transition: 0.1s;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  mix-blend-mode: difference;
+
+}
+
+.link-grow{
+  transform: scale(2);
+}
+
+a{
+  cursor: none;
+}
+li{
+  cursor: none;
+}
+
+
+body{
+    margin: auto;
+    padding: 0;
+      width: 100%;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      scroll-snap-type: y proximity;
+      cursor: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    
+}
+
+/* menu */
+
+.menu1:hover ~.cursor
+{
+  transform: scale(6);
+}
+.menu1{
+  opacity: 100%;
+  background-color:  #ffffff;
+  position: fixed;
+  border-radius: 0%;
+padding: 0;
+margin: 0; 
+  width: 33%;
+  bottom: 0;
+  height: 25%;
+  z-index: 20000;
+
+
+  transition: 0.2s ease;
+  
+}
+
+.menu1:hover{
+  height: 26%;
+  border-top:solid #ffffff ;
+  border-width: 1em; ;
+  background-color:  #262626;
+}
+
+
+
+.menu2{
+
+  opacity: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  border-radius: 0%;
+padding: 0;
+margin: 0;
+  right: 0px;
+  width: 34%;
+  bottom: 0;
+  height: 25%;
+  z-index: 20000;
+  transition: 0.2s ease ;
+  border-right:solid #ffffff ;
+  border-width: 1em; ;
+}
+
+.menu2:hover{
+  border-top:solid #ffffff ;
+  border-width: 1em; ;
+  height: 26%;
+  background-color:  #262626;
+}
+
+.menu3{
+  opacity: 100%;
+  background-color:#ffffff;
+  position: fixed;
+  border-radius: 0%;
+padding: 0;
+transform: translateX(101%);
+  width: 32.6%;
+  bottom: 0;
+  height: 25%;
+  z-index: 20000;
+  transition: 0.2s ease;
+  
+}
+
+.menu3:hover{
+  border-top:solid #ffffff ;
+  border-width: 1em; ;
+  height: 26%;
+  background-color: #262626;
+}
+.menuclick-gender{
+height: 25%;
+  border-top:solid #ffffff ;
+  border-width: 1em; ;
+  background-color:  #262626;
+}
+
+.menutext{
+  display: block;
+  transform: translateY(25%);
+  color: #b5b5b5;
+  font-size: 3000%;
+  font-weight: bold;
+  
+}
+.menutext-1{
+  transform: translate(5%,180%);
+  letter-spacing: 1.0em;
+  display: block;
+  color: #b5b5b5;
+  font-size: 250%;
+  font-weight:300
+}
+.menutext:hover{
+  display: block;
+  transform: translateY(25%);
+  color: #b5b5b5;
+  font-size: 3000%;
+  font-weight: bold;
+}
+
+/* 播放功能 */
+.了解SDGs{
+  position:absolute;
+  margin: 0;
+  top: 525px;
+  font-weight: 600;
+  color:aliceblue;
+  background: #888398;
+  padding: 8px 20px;
+  border: 1px solid #FFFFFF;
+  border-radius: 108px;
+}
+
+.play-btn{
+    width: 100%;
+   
+  }
+
+.video-player{
+  position: relative;
+    top: -5px;  
+width:100%;
+  ;
+}
+
+.video-player2{
+  
+  
+  position: absolute;
+  transform: translateY(68.1%);
+  top: 633px;
+    width: 100%;
+    display: none;
+    
+}
+
+.video-player305{
+
+
+  position: relative;
+  top:-8%;
+  width: 100%;
+}
+
+.video-player3{
+  
+  
+position: absolute;
+
+display: none;
+top: 200.5%;
+  width: 100%;
+}
+
+
+
+.video-player405{
+ 
+  position: relative;
+  top: -15px;
+  width: 100%;
+
+}
+
+.video-player4{
+  
+  position: absolute;
+  transform: translateY(124.6%);
+display: none;
+  width: 100%;
+
+}
+
+
+/*  */
+
+.實現性別平等{
+  transition: ease 0.3s;
+}
+.實現性別平等:hover{
+  color: #607b7d;
+  
+}
+
+h1{
+  transform: translateY(0%);
+  transform: scale(1.15);
+  top: 150%;
+  position: absolute;
+  color: rgb(12, 12, 12);
+  z-index: 10000;
+  left: 11%;
+  margin: 0;
+  transition: ease 0.3s;
+  text-shadow: 0em 0.2em 0.2em #b1b1b1
+  
+}
+
+h1:hover{
+scale: 1.015;
+  text-shadow: #262626;
+}
+
+.number{
+  color: rgb(255, 255, 255);
+  position: relative;
+  margin-bottom: -100px;
+  font-size:900%;
+  font-weight: 900;
+  text-shadow: #262626;
+  
+}
+
+.text{
+  color: rgb(255, 255, 255);
+  font-size: 150%;
+  font-weight: 600;
+  
+}
+
+p{
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  font-size: 70%;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  text-shadow: #262626;
+}
+/*健康生活與福祉*/
+.健康生活與福祉{
+  transition: ease 0.3s;
+}
+.健康生活與福祉:hover{
+  color: #ffffff;
+}
+
+h3{
+  transform: translateY(-200%);
+  top: 1335px;
+  position: absolute;
+  color: aliceblue;
+  z-index: 10000;
+  left: 120px;
+  margin: 0;
+  transition: ease 0.1s;
+
+}
+
+h3:hover{
+  scale: 1.02;
+  color: aliceblue;
+}
+
+.number2{
+ 
+  position: relative;
+  margin-bottom: -70px;
+  font-size:200px;
+  font-weight: 900;
+  
+}
+
+.text3{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.p{
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+}
+
+/* 確保所有人都能享有水、衛生及其永續管理 */
+.確保所有人都能享有水、衛生及其永續管理{
+  transition: ease 0.3s;
+}
+.確保所有人都能享有水、衛生及其永續管理:hover{
+  color: #ffffff;
+}
+
+h4{
+  top:2000px;
+  position: absolute;
+  color: aliceblue;
+  z-index: 10000;
+  left: 120px;
+  margin: 0;
+  transition: ease 0.1s;
+
+}
+
+h4:hover{
+  scale: 1.02;
+  color: aliceblue;
+}
+
+.number3{
+  position: relative;
+  margin-bottom: -70px;
+  font-size:200px;
+  font-weight: 900;
+  
+}
+
+.text4{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.p{
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+}
+
+
+/* 了解更多 */
+.Button{
+  font-size: 100%;
+  background-color:#888398;
+  border: 1px solid #FFFFFF;
+  border-radius: 108px;
+  padding: 3% 8%;
+  border-radius:100px;
+  box-shadow: 0 0 0.3rem rgba(49, 49, 49, 0.2); /* black with 30% opacity */
+  transition: all .2s linear;
+  
+
+}
+
+.Button:hover{
+background-color:#767185;
+}
+
+
+/*  */
+.Button00{
+  z-index: 999999999;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 100;
+  /* cursor:pointer; */
+  width:90%;
+  height: 50%;
+border: white solid 10px;
+ border-radius: 60px;
+  mask: radial-gradient(transparent 11px,rgb(255, 255, 255) 0px);
+  filter: blur(0px);
+  transition: ease 0.2s;
+scale: 0%;
+animation: botton 2s infinite;
+}
+.Button00none{
+  transition: ease 0.6s;
+  scale: 0%;
+  }
+  
+  .Button00block{
+  transition: ease 0.6s;
+  scale: 100%;
+  }
+  
+
+.Button0{
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  transform: translate(4%,35%);
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1000;
+  /* cursor:pointer; */
+  width:90%;
+  height: 50%;
+border: white solid 10px;
+ border-radius: 60px;
+  mask: radial-gradient(transparent 11px,rgb(255, 255, 255) 0px);
+  filter: blur(0px);
+  transition: ease 0.2s;
+scale: 0%;
+animation: botton 2s infinite;
+}
+
+@keyframes botton{
+50%{
+  opacity: 0%;
+
+}
+}
+
+
+
+.Button0none{
+transition: ease 0.6s;
+scale: 0%;
+}
+
+.Button0block{
+transition: ease 0.6s;
+scale: 100%;
+}
+
+/*  */
+
+  .Button2{
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    top: 120%;
+    left: 4%;
+    position: absolute;
+    z-index: 100;
+    /* cursor:pointer; */
+    width:90%;
+    height: 50%;
+  border: white solid 10px;
+   border-radius: 60px;
+    mask: radial-gradient(transparent 11px,rgb(255, 255, 255) 0px);
+    filter: blur(0px);
+    transition: ease 0.2s;
+  scale: 0%;
+  animation: botton 2s infinite;
+
+  scale: 0%;
+  }
+
+
+ .Button2none{
+transition: ease 0.6s;
+  scale: 0%;
+}
+
+.Button2block{
+  transition: ease 0.6s;
+  scale: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+  .Button3{
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    top: 230%;
+    left: 4%;
+    position: absolute;
+    z-index: 100;
+    /* cursor:pointer; */
+    width:90%;
+    height: 50%;
+  border: white solid 10px;
+   border-radius: 60px;
+    mask: radial-gradient(transparent 11px,rgb(255, 255, 255) 0px);
+    filter: blur(0px);
+    transition: ease 0.2s;
+  scale: 0%;
+  animation: botton 2s infinite;
+
+scale: 0%;
+  }
+
+  
+    .Button3block{
+      transition: ease 0.6s;
+      scale: 100%;
+    }
+    
+    .Button3none{
+      transition: ease 0.6s;
+      scale: 0%;
+    }
+/*  */
+.Button4{
+  z-index: 9999;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  top: 336%;
+  left: 4%;
+  position: absolute;
+  z-index: 100;
+  /* cursor:pointer; */
+  width:90%;
+  height: 50%;
+border: white solid 10px;
+ border-radius: 60px;
+  mask: radial-gradient(transparent 11px,rgb(255, 255, 255) 0px);
+  filter: blur(0px);
+  transition: ease 0.2s;
+scale: 0%;
+animation: botton 2s infinite;
+scale: 0%;
+}
+
+  .Button4block{
+    transition: ease 0.6s;
+    scale: 100%;
+  }
+  
+  .Button4none{
+    transition: ease 0.6s;
+    scale: 0%;
+  }
+
+
+
+/* nav */
+.navitem{
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content:center;
+  width: 100%;
+padding: 8px;
+transition: all 300ms ease-in-out;
+}
+
+
+
+/* menu */
+ul{
+  margin: 0;
+  padding: 0;
+ width: 80%;
+  text-align: end;
+  }
+  
+  a{
+    text-decoration: none;
+  
+  }
+
+  
+  .menu{
+    transition: all .2s linear;
+    color: #666666;
+  }
+  
+  .menu:hover{
+    transform: scale(0.9);
+
+  }
+  
+  .SDGs{
+    color: #3a606e;
+    opacity: 70%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    transform: translate(15%,50%);
+    z-index: 60000;
+    transition: all .5s ;
+    font-weight: 900;
+    font-size: 1050%;
+    border: #3a606e solid 0px;
+    border-radius:0px ;
+
+   
+  }
+  
+  .SDGs:hover{
+    transform: translate(10%,50%);
+    padding-left:2% ;
+    border-bottom: #262626 solid;
+    border-radius: 0;
+    scale: 1;
+    letter-spacing: 0.6em;
+    color: #2c2c2c;
+  }
+
+  .Button{
+    color: #e6e6e6;
+  }
+/* .Little{
+  width:50px;height:50px; border-radius: 100px; border-color: rgb(238, 240, 242); position: absolute ; left: 0; z-index: 1000;
+} */
+
+
+/* scroll */
+.scroll-down header{
+ transform: translate3d(0,-100%,0);
+}
+
+/* .scroll-up header{
+filter: drop-shadow(0 -10px 20px rgb(170,170,170));
+} */
+
+
+
+/* up&down */
+
+.up{
+  z-index: 5000;
+  display:flex;
+  justify-content: center;
+  top: 10%;
+  position: fixed;
+transition: 0.5s;
+background:none; width: 100%;
+
+}
+
+#up-size{
+  
+  padding: 10%;
+  opacity: 100;
+  width: 30px;
+  height: 0px;
+  background: none;
+  width: 100%;
+  transition: ease 0.1s;
+
+}
+
+#up-size:hover{
+  
+   
+  padding: 8%;
+  opacity: 100;
+  width: 30px;
+  height: 73px;
+  background: none;
+  width: 100%;
+ 
+}
+
+
+.down{
+  z-index: 5000;
+  display:flex;
+  justify-content: center;
+  bottom: 0;
+transform: translateY(-200%);
+
+  position: fixed;
+transition: 0.5s;
+background:none; width: 100%;
+
+}
+
+#down-size{
+  transform:rotate(-10 50 100);
+  padding: 10%;
+  opacity: 100;
+  width: 30px;
+  height: 0px;
+  background: none;
+  width: 100%;
+  transition: ease 0.1s;
+
+}
+
+#down-size:hover{
+  padding: 8%;
+  opacity: 100;
+  width: 30px;
+  height: 70px;
+  background:none;
+  width: 100%;
+ 
+}
+
+
+.earthand{
+  font-size: large;
+  font-weight: 300;
+  letter-spacing: 0.5em;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient( to top, #ffffff, transparent 100%);
+  height: 12%;
+  z-index: 99999;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  transition: 1.5s ;
+  font-size: 110%;
+}
+.about-us{
+  margin: auto;
+  color: #828e82;
+  transform: translateY(50%);
+  animation:aboutus-animate 2s ease infinite;
+  animation-duration: 2.5s;
+  border-bottom-style:solid;
+  border-width:1.5px ;
+  width: 10%;
+  padding-bottom: 0.5%;
+  transition: 1.5s ;
+
+
+}
+
+
+@keyframes aboutus-animate{
+
+  0%{
+    border-width:0% ;
+    scale: 100%;
+
+  }
+
+50%{
+
+   scale: 105%;
+  }
+}
+
+.earthand:hover{
+  height: 15%;
+  font-size:larger;
+  color: #e6e6e6;
+}
+.section0{
+  z-index:100000; position: absolute; width: 110%; top: 0; opacity: 50%; transform: translateY(-10%);transition: 0.5s ;
+}
